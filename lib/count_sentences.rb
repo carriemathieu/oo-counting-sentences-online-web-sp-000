@@ -16,6 +16,6 @@ class String
 
   # split strings on .?!, count elements as result of split
   def count_sentences
-    self.strip.split(/[?!.]/).length
+    self.squeeze('.!?').count('.!?')
   end
 end
